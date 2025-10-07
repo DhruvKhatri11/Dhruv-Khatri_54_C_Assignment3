@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int a[10], n, val, i, found=0;
+    printf("Enter size: ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++) scanf("%d",&a[i]);
+    printf("Enter value to search: ");
+    scanf("%d",&val);
+    for(i=0;i<n;i++) if(a[i]==val){found=1; break;}
+    if(found) printf("Found at position %d",i);
+    else printf("Not found");
+    return 0;
+}
+
+Output: Enter size : 5
+10 20 30 40 50
+Enter value to search: 30
+Found at position : 2
