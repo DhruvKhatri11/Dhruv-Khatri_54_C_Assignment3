@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int a[5], b[10]={0}, i;
+    printf("Enter 5 values: ");
+    for(i=0;i<5;i++) scanf("%d",&a[i]);
+    for(i=0;i<5;i++) b[i*2]=a[i];
+    printf("New array: ");
+    for(i=0;i<10;i++) printf("%d ",b[i]);
+    return 0;
+}
+
+Output: Enter 5 values: 11 22 33 44 55
+New Array : 11 0 22 0 33 0 44 0 55 0
