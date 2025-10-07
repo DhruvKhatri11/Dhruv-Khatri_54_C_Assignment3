@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int a[5], i;
+    printf("Enter 5 values: ");
+    for(i=0;i<5;i++) scanf("%d",&a[i]);
+    printf("Reversed: ");
+    for(i=4;i>=0;i--) printf("%d ",a[i]);
+    return 0;
+}
+
+Output: Enter 5 values : 10 20 30 40 50
+Reversed: 50 40 30 20 10
