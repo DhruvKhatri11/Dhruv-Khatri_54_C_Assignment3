@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int a[10], n, i;
+    printf("Enter size: ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++) scanf("%d",&a[i]);
+    n--;
+    for(i=0;i<n;i++) printf("%d ",a[i]);
+    return 0;
+}
+
+Output : Enter size: 5
+10 20 30 40 50
+10 20 30 40
